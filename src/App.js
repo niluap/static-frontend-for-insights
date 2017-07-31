@@ -1,25 +1,40 @@
 import React, { Component } from 'react';
-//import logo from './images/logo.svg';
+import lighthouse_PA from './images/lighthouse_PA.svg';
 import './App.css';
 
 class MainHeader extends Component {
   render() {
     return (
       <div className="MainHeader">
-        <h1>main header</h1>
-        <p>proba tekstu</p>
+        <div className="MainHeaderButtonWrapper">
+          <button className="MainHeaderButton">LOGIN</button>
+        </div>
+        <section className="MainHeaderSection">
+          <div>
+          <h1>Insights</h1>
+          <h4>Make Better Choices with Money</h4>
+          </div>
+          <div>
+            <img src={lighthouse_PA} alt="lighthouse" className="HeaderLogo"/>
+          </div>
+        </section>
       </div>
     );
   }
 }
 
-class SmallHeader extends Component {
+class SmallHeader extends Component{
   render() {
     return (
       <div className="SmallHeader">
-        <h1>Our insights</h1>
-        <h3>Get all your financial questions answered with articles <br/>
-          from finance gurus.</h3>
+        
+        
+          <h1>Our insights</h1>
+          <h4>Get all your financial questions answered with articles <br/>
+            from finance gurus.</h4>
+          
+          <div></div>
+          
       </div>
     );
   }

@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 @keyframes App-logo-spin {
@@ -10,17 +11,65 @@
   
 .MainHeader{
   background: rgb(249,186,106);
-  padding: 1rem;
+  padding:2rem 6rem 0 6rem;
+  text-align: left;
+  
 }
+.MainHeader h1{
+color:rgb(41,50,85);
+margin:3rem 1rem 0.5rem 1rem;
+font-size: 4em;
+font-weight: 900;
+
+}
+
+.MainHeader h4{
+color:white;
+margin:0.5rem 1rem 0.5rem 1rem;
+font-size: 1.5rem;
+font-weight: 400;
+}
+.MainHeaderButtonWrapper{
+  width:100%;
+  display: flex;
+  flex-direction:row-reverse;
+}
+.MainHeaderButton{
+  border: 2px solid rgb(41,50,85);
+  border-radius: 2rem;
+  background: rgb(249,186,106);
+  padding: 0.55rem 2.5rem 0.55rem 2.5rem ;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.MainHeaderSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.HeaderLogo{
+  width: 100%;
+  min-height:20rem;
+ }
+
+button.MainHeaderButton{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color:rgb(41,50,85);
+  }
+
 .SmallHeader{
 padding:2rem 6rem 3rem 6rem;
 color: rgb(96,96,96);
 font-size: 1.5rem;
 }
+.SmallHeader h1,h4{
+font-weight: 400;
+}
 
 .ArticleWrapper{
 padding:0 6rem 0 6rem;
-
 }
 
 .ArticleTeaser {
@@ -28,12 +77,6 @@ padding:0 6rem 0 6rem;
   height:15rem;
 }
 
-.Footer {
-  background: rgb(41,50,85);
-  color: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 section {
 display: flex;
 flex-direction: row;
@@ -52,22 +95,30 @@ flex-direction: row;
   background: white;
   padding: 0.55rem 0.75rem 0.55rem 0.75rem ;
   font-size: 1.3rem;
-  margin: 0.5rem;
+    margin: 0.5rem;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
   
 }
-button{
+button.NavigationButton{
   font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(192,192,192);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   
 }
-button:hover {
+button.NavigationButton:hover {
     background-color: rgb(41,50,85);
     color: white;
     border: 2px solid rgb(41,50,85);
+}
+
+.Footer {
+  background: rgb(41,50,85);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
 }
