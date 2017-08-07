@@ -6,6 +6,10 @@
   font-size: 16px;
 }
   
+
+
+
+
  /* MAIN HEADER */
 .MainHeader{
   background: rgb(249,186,106);
@@ -57,6 +61,9 @@ button.MainHeaderButton{
   color:rgb(41,50,85);
   }
 
+
+
+
   /* SMALL HEADER */
 .SmallHeader{
 padding:0.5em 4em 2em 4em;
@@ -72,6 +79,10 @@ color: rgb(96,96,96);
   font-weight: 400;
   font-size: 1.2em;
   }
+
+
+
+
 
  /* ARTICLES*/
 .ArticleWrapper{
@@ -120,12 +131,13 @@ padding:0 4em 0 4em;
   margin-bottom:1em;
   }
 
-section {
+.ArticleWrapperSection{
 min-height: 370px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
+
 
 /* NAVIGATION BAR*/
 .NavigationBar {
@@ -164,6 +176,11 @@ button.NavigationButton:hover {
     color: white;
     border: 2px solid rgb(41,50,85);
 }
+
+
+
+
+
 /*MORE BUTTON*/
 .MoreWrapper{
   margin-top: 1em;
@@ -192,6 +209,10 @@ button.MoreButton{
     color: white;
     border: 2px solid rgb(41,50,85);
 }
+
+
+
+
 
 /*GET STARTED SECTION*/
 .GetStartedElements{
@@ -248,6 +269,84 @@ text-align: left;
   font-weight: 500;
   color: rgb(133,133,133);
 }
+
+
+
+
+
+/* GET N TOUCH*/
+.GetInTouchSection{
+min-height: 250px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.GetInTouchWrapper{
+  padding: 0 4em 0 4em;
+  }
+
+.GetInTouch {
+  margin: 4em 0.25em 4em 0.25em;
+  flex: 1 1 0em;
+}
+
+.GetInTouch + .GetInTouch {
+  border-left: 2px solid rgb(192,192,192);
+  padding-left: 2em;
+}
+
+.GetInTouchElements{
+   color: rgb(41,50,85);
+   display: flex;
+   flex-direction: row;
+  }
+
+
+.GetInTouchImage{
+  height: 10em;
+  width: auto;
+  margin-top: 2em;
+ }
+
+.GetInTouchButton{
+  border: none;
+  background:white;
+  padding: 0;
+  font-size: 1.2em;
+  margin: 1em 1em 1em 0;
+  color: rgb(41,50,85);
+  }
+
+button.GetInTouchButtonn{
+  font-family: 'Quicksand', sans-serif;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button.GetInTouchButton:hover{
+ color: rgb(122,122,122);
+}
+
+.GetInTouchHeading{
+text-align: left;
+padding: 0 0 0 1em;
+}
+
+.GetInTouchHeading h1{
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.GetInTouchHeading h2{
+  font-size: 1em;
+  font-weight: 500;
+  color: rgb(133,133,133);
+}
+
+
 
 
 /*FOOTER*/

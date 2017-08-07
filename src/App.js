@@ -9,6 +9,8 @@ import calculator from './images/calculator_cc.svg';
 import greece from './images/greece_cc.svg';
 import house from './images/house_cc.svg';
 import phone from './images/phone_cc.svg';
+import envelope from './images/envelope_cc.svg';
+import lightbulb from './images/lightbulb_cc.svg';
 import './App.css';
 
 class MainHeader extends Component {
@@ -99,16 +101,16 @@ class ArticleWrapper extends Component {
   render() {
     return (
       <div className="ArticleWrapper">
-        <section>
+        <section className="ArticleWrapperSection">
           <ArticleTeaser name="Hard Truth about Insurance" image={umbrella} views="200" color={backgroundColorForTeasers.Turquoise} flexi={widthForTeasers.small}/>
           <ArticleTeaser name="What are Equities and how they can grow" image={coins} views="3,500" color={backgroundColorForTeasers.Brown} flexi={widthForTeasers.small}/>
           <ArticleTeaser name="Angels and Unicors" image={rocket} views="300" color={backgroundColorForTeasers.Blue} flexi={widthForTeasers.small}/>
         </section>
-        <section>
+        <section className="ArticleWrapperSection">
           <ArticleTeaser name="Investment options for Tax Saving under 80 C" image={wallet} views="300" color={backgroundColorForTeasers.Yellow} flexi={widthForTeasers.small}/>
           <ArticleTeaser name="Secret Superpower of Compunding" image={calculator} views="3,500" color={backgroundColorForTeasers.Orange} flexi={widthForTeasers.big}/>
         </section>
-        <section>
+        <section className="ArticleWrapperSection">
           <ArticleTeaser name="Money kept in accout loses in Value" image={greece} views="300" color={backgroundColorForTeasers.Green} flexi={widthForTeasers.big}/>
           <ArticleTeaser name="Real Estate" image={house} views="3,500" color={backgroundColorForTeasers.Grey} flexi={widthForTeasers.small}/>
         </section>
@@ -142,6 +144,44 @@ class GetStarted extends Component {
   }
 }
 
+class GetInTouch extends Component {
+  render() {
+    return (
+      <div className="GetInTouch">
+        <section className="GetInTouchElements">
+          <img src={this.props.image} alt="img for GetInTouch" className="GetInTouchImage"/>
+          <div className="GetInTouchHeading">
+              <h1>{this.props.titleH1}</h1>
+              <h2>{this.props.titleH2}</h2>
+              <button className="GetInTouchButton">{this.props.ButtonGetStarted}</button>
+          </div>
+        </section>
+        </div>
+    );
+  }
+}
+
+class GetInTouchWrapper extends Component {
+  render() {
+    return (
+      <div className="GetInTouchWrapper">
+        <section className="GetInTouchSection">
+          <GetInTouch image={envelope} 
+            titleH1="Subscribe to Insights" 
+            titleH2="Get best of Insights delivered to your inbox" 
+            ButtonGetStarted="SUBSCRIBE"
+            />
+          <GetInTouch image={lightbulb} 
+            titleH1="Have a Question?" 
+            titleH2="Get advice from experts, for free, in 48 hours" 
+            ButtonGetStarted="POST YOUR THOUGHT"
+            />
+        </section>
+      </div>
+    );
+  }
+}
+
 class Footer extends Component {
   render() {
     return (
@@ -162,6 +202,7 @@ class App extends Component {
         <ArticleWrapper />
         <More />
         <GetStarted />
+        <GetInTouchWrapper />
         <Footer />
       </div>
     );
