@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import lighthouse_PA from './images/lighthouse_PA.svg';
+import clock from './images/clock_cc.svg';
+import umbrella from './images/umbrella_cc.svg';
+import coins from './images/coins_cc.svg';
+import rocket from './images/rocket_cc.svg';
+import wallet from './images/wallet_cc.svg';
+import calculator from './images/calculator_cc.svg';
+import greece from './images/greece_cc.svg';
+import house from './images/house_cc.svg';
 import './App.css';
 
 class MainHeader extends Component {
@@ -27,14 +35,9 @@ class SmallHeader extends Component{
   render() {
     return (
       <div className="SmallHeader">
-        
-        
           <h1>Our insights</h1>
           <h4>Get all your financial questions answered with articles <br/>
             from finance gurus.</h4>
-          
-          <div></div>
-          
       </div>
     );
   }
@@ -66,15 +69,26 @@ const backgroundColorForTeasers = {
 
 const widthForTeasers = {
    "small": "1 1 0em",
-    "big": "2 2 2em",
+    "big": "2 2 1em",
     };
+
 
 class ArticleTeaser extends Component {
   
   render() {
     return (
       <div className="ArticleTeaser" style={{backgroundColor: this.props.color, flex: this.props.flexi}}>
-        <h1>teasers for {this.props.name}</h1>
+        <section className="ArticleTeaserElements">
+          
+              <img src={this.props.image} alt="img for teaser" className="TeaserImage"/>
+              <div className="TeaserHeading">
+                <h1>{this.props.name}</h1>
+              
+          </div>
+          <div className="Views">
+            <img src={clock} alt="clock" className="ViewsImage"/> <p>{this.props.views} Views </p>
+          </div>
+        </section>
       </div>
     );
   }
@@ -86,17 +100,17 @@ class ArticleWrapper extends Component {
     return (
       <div className="ArticleWrapper">
         <section>
-          <ArticleTeaser name="Umberlla" color={backgroundColorForTeasers.Turquoise} flexi={widthForTeasers.small}/>
-          <ArticleTeaser name="Money" color={backgroundColorForTeasers.Brown} flexi={widthForTeasers.small}/>
-          <ArticleTeaser name="Rocket" color={backgroundColorForTeasers.Blue} flexi={widthForTeasers.small}/>
+          <ArticleTeaser name="Hard Truth about Insurance" image={umbrella} views="200" color={backgroundColorForTeasers.Turquoise} flexi={widthForTeasers.small}/>
+          <ArticleTeaser name="What are Equities and how they can grow" image={coins} views="3,500" color={backgroundColorForTeasers.Brown} flexi={widthForTeasers.small}/>
+          <ArticleTeaser name="Angels and Unicors" image={rocket} views="300" color={backgroundColorForTeasers.Blue} flexi={widthForTeasers.small}/>
         </section>
         <section>
-          <ArticleTeaser name="Wallet" color={backgroundColorForTeasers.Yellow} flexi={widthForTeasers.small}/>
-          <ArticleTeaser name="Calc" color={backgroundColorForTeasers.Orange} flexi={widthForTeasers.big}/>
+          <ArticleTeaser name="Investment options for Tax Saving under 80 C" image={wallet} views="300" color={backgroundColorForTeasers.Yellow} flexi={widthForTeasers.small}/>
+          <ArticleTeaser name="Secret Superpower of Compunding" image={calculator} views="3,500" color={backgroundColorForTeasers.Orange} flexi={widthForTeasers.big}/>
         </section>
         <section>
-          <ArticleTeaser name="Greece" color={backgroundColorForTeasers.Green} flexi={widthForTeasers.big}/>
-          <ArticleTeaser name="House" color={backgroundColorForTeasers.Grey} flexi={widthForTeasers.small}/>
+          <ArticleTeaser name="Money kept in accout loses in Value" image={greece} views="300" color={backgroundColorForTeasers.Green} flexi={widthForTeasers.big}/>
+          <ArticleTeaser name="Real Estate" image={house} views="3,500" color={backgroundColorForTeasers.Grey} flexi={widthForTeasers.small}/>
         </section>
       </div>
     );
