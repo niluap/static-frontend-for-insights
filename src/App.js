@@ -8,6 +8,7 @@ import wallet from './images/wallet_cc.svg';
 import calculator from './images/calculator_cc.svg';
 import greece from './images/greece_cc.svg';
 import house from './images/house_cc.svg';
+import phone from './images/phone_cc.svg';
 import './App.css';
 
 class MainHeader extends Component {
@@ -79,9 +80,8 @@ class ArticleTeaser extends Component {
     return (
       <div className="ArticleTeaser" style={{backgroundColor: this.props.color, flex: this.props.flexi}}>
         <section className="ArticleTeaserElements">
-          
-              <img src={this.props.image} alt="img for teaser" className="TeaserImage"/>
-              <div className="TeaserHeading">
+          <img src={this.props.image} alt="img for teaser" className="TeaserImage"/>
+          <div className="TeaserHeading">
                 <h1>{this.props.name}</h1>
               
           </div>
@@ -117,6 +117,31 @@ class ArticleWrapper extends Component {
   }
 }
 
+class More extends Component {
+  render() {
+    return (
+      <div className="MoreWrapper">
+        <button className="MoreButton">MORE</button>
+      </div>
+    );
+  }
+}
+
+class GetStarted extends Component {
+  render() {
+    return (
+        <section className="GetStartedElements">
+          <img src={phone} alt="img for getstarted" className="GetStartedImage"/>
+          <div className="GetStartedHeading">
+              <h1>Save tax in 2 minutes</h1>
+              <h2>Saving for 80c is like taking a selfie <br/>literally. Try it for yourself!</h2>
+              <button className="GetStartedButton">GET STARTED</button>
+          </div>
+        </section>
+    );
+  }
+}
+
 class Footer extends Component {
   render() {
     return (
@@ -135,6 +160,8 @@ class App extends Component {
         <SmallHeader />
         <NavigationBar />
         <ArticleWrapper />
+        <More />
+        <GetStarted />
         <Footer />
       </div>
     );
