@@ -11,6 +11,9 @@ import house from './images/house_cc.svg';
 import phone from './images/phone_cc.svg';
 import envelope from './images/envelope_cc.svg';
 import lightbulb from './images/lightbulb_cc.svg';
+import facebook from './images/logo-facebook.svg';
+import instagram from './images/logo-instagram.svg';
+import twitter from './images/logo-twitter.svg';
 import './App.css';
 
 class MainHeader extends Component {
@@ -185,8 +188,33 @@ class GetInTouchWrapper extends Component {
 class Footer extends Component {
   render() {
     return (
+      <div className="FooterWrapper">
       <div className="Footer">
-        <h1>Footer</h1>
+        <div className="InteractWithCustomer">
+          <div className="InteractWithCustomer_column About">
+            <span>ABOUT</span>
+            <span>About Us</span>
+            <span>Taxy</span>
+            <span>Calculator</span>
+            <span>Contact Us</span>
+          </div>
+          <div className="InteractWithCustomer_column Contact">
+            <span>CONTACT</span>
+            <span>Basic Info</span>
+            <span>Map</span>
+            <span>Contact form</span>
+          </div>
+          
+        </div>
+        <div className="SocialMedia">
+          <img src={facebook} alt="img for SocialMedia" className="SocialMediaImage"/>
+          <img src={twitter} alt="img for SocialMedia" className="SocialMediaImage"/>
+          <img src={instagram} alt="img for SocialMedia" className="SocialMediaImage"/>
+        </div>  
+      </div>
+      <span className="Signature">Made with love by Niluap.
+          All icons from thenounproject.com
+          </span>
       </div>
     );
   }
@@ -204,6 +232,7 @@ class App extends Component {
         <GetStarted />
         <GetInTouchWrapper />
         <Footer />
+        
       </div>
     );
   }
