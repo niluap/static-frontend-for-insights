@@ -28,7 +28,7 @@ class MainHeader extends Component {
           <h1>Insights</h1>
           <h4>Make Better Choices with Money</h4>
           </div>
-          <div>
+          <div className="HeaderLogoWrapper">
             <img src={lighthouse_PA} alt="lighthouse" className="HeaderLogo"/>
           </div>
         </section>
@@ -87,8 +87,7 @@ class ArticleTeaser extends Component {
         <section className="ArticleTeaserElements">
           <img src={this.props.image} alt="img for teaser" className="TeaserImage"/>
           <div className="TeaserHeading">
-                <h1>{this.props.name}</h1>
-              
+              <h1>{this.props.name}</h1>
           </div>
           <div className="Views">
             <img src={clock} alt="clock" className="ViewsImage"/> <p>{this.props.views} Views </p>
@@ -135,6 +134,7 @@ class More extends Component {
 class GetStarted extends Component {
   render() {
     return (
+      <div className='GetStartedWrapper'>
         <section className="GetStartedElements">
           <img src={phone} alt="img for getstarted" className="GetStartedImage"/>
           <div className="GetStartedHeading">
@@ -143,6 +143,7 @@ class GetStarted extends Component {
               <button className="GetStartedButton">GET STARTED</button>
           </div>
         </section>
+        </div>
     );
   }
 }
@@ -232,7 +233,6 @@ class App extends Component {
         <GetStarted />
         <GetInTouchWrapper />
         <Footer />
-        
       </div>
     );
   }
