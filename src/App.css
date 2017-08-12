@@ -1,719 +1,622 @@
 .App {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  min-height: 948px;
-  font-size: 16px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    min-height: 948px;
+    font-size: 16px;
 }
-  
+/* MAIN HEADER */
 
- /* MAIN HEADER */
-.MainHeader{
-  background: rgb(249,186,106);
-  padding:0em 4em 0 4em;
-  text-align: left; 
+.MainHeader {
+    background: rgb(249, 186, 106);
+    padding: 0em 4em 0 4em;
+    text-align: left;
 }
-
-.MainHeader h1{
-color:rgb(41,50,85);
-margin:1em 0 0.2em 0;
-font-size: 4em;
-font-weight: 900;
+.MainHeader h1 {
+    color: rgb(41, 50, 85);
+    margin: 1em 0 0.2em 0;
+    font-size: 4em;
+    font-weight: 900;
 }
-
-.MainHeader h4{
-color:white;
-margin:0.5em 0 0.5em 0;
-font-size: 1.5em;
-font-weight: 400;
-}
-
-.MainHeaderButtonWrapper{
-  display: flex;
-  flex-direction:row-reverse;
-  margin-bottom: 2em;
-  max-width:1350px;
-  margin:auto;
-}
-.MainHeaderButton{
-  border: 2px solid rgb(41,50,85);
-  border-radius: 2rem;
-  background: rgb(249,186,106);
-  padding: 0.55em 2.5em 0.55em 2.5em;
-  font-size: 1em;
-  margin: 1em;
-}
-.MainHeaderSection{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width:1350px;
-  margin:auto;
-
-  position: relative;
-
-}
-.HeaderLogoWrapper{
-
-}
-.HeaderLogo{
-position: absolute;
-
-bottom: 0;
-right: 0;
-
-min-height: 100%;
-}
-
-button.MainHeaderButton{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  color:rgb(41,50,85);
-  }
-
-  button.MainHeaderButton:hover {
-    background-color: rgb(41,50,85);
+.MainHeader h4 {
     color: white;
-    border: 2px solid rgb(41,50,85);
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.5em;
+    font-weight: 400;
 }
-
-
-
-  /* SMALL HEADER */
-.SmallHeader{
-padding:1em 4em 2em 4em;
-color: rgb(96,96,96);
-max-width:1350px;
-margin:auto;
+.MainHeaderButtonWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2em;
+    max-width: 1350px;
+    margin: auto;
 }
-
-.SmallHeader h1{
-  font-weight: 500;
-  font-size: 3em;
+.MainHeaderButton {
+    border: 2px solid rgb(41, 50, 85);
+    border-radius: 2rem;
+    background: rgb(249, 186, 106);
+    padding: 0.55em 2.5em 0.55em 2.5em;
+    font-size: 1em;
+    margin: 1em;
 }
-
-.SmallHeader h4{
-  font-weight: 400;
-  font-size: 1.2em;
-  }
-
-
- /* ARTICLES*/
-.ArticleWrapper{
-padding:0 4em 0 4em;
- max-width:1350px;
-  margin:auto;
+.MainHeaderSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+    position: relative;
 }
+.HeaderLogoWrapper {} .HeaderLogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-height: 100%;
+}
+button.MainHeaderButton {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: rgb(41, 50, 85);
+}
+button.MainHeaderButton:hover {
+    background-color: rgb(41, 50, 85);
+    color: white;
+    border: 2px solid rgb(41, 50, 85);
+}
+/* SMALL HEADER */
 
+.SmallHeader {
+    padding: 1em 4em 2em 4em;
+    color: rgb(96, 96, 96);
+    max-width: 1350px;
+    margin: auto;
+}
+.SmallHeader h1 {
+    font-weight: 500;
+    font-size: 3em;
+}
+.SmallHeader h4 {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+/* ARTICLES*/
+
+.ArticleWrapper {
+    padding: 0 4em 0 4em;
+    max-width: 1350px;
+    margin: auto;
+}
 .ArticleTeaser {
-  margin: 0.5em 0.5em 0.5em 0.5em; 
-  color: white;
-
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    color: white;
 }
-.ArticleTeaserElements{
-  display: flex;
-  flex-direction: column;
- align-content: stretch;
- min-height: 100%;  
+.ArticleTeaserElements {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    min-height: 100%;
 }
-.TeaserHeading{
-  margin-left: 2em;
-  margin-right: auto;
-  text-align: left;
-  flex-grow:1;
+.TeaserHeading {
+    margin-left: 2em;
+    margin-right: auto;
+    text-align: left;
+    flex-grow: 1;
 }
 .TeaserHeading h1 {
-  padding-right: 2em;
+    padding-right: 2em;
 }
 /************ IMAGES ************/
+
 .TeaserImage {
-  min-height:12em;
-  width:auto;
-  margin-top:2.5em;
-  margin-left: auto;
-  margin-right: auto;
+    min-height: 12em;
+    width: auto;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
-.ViewsImage{
-  width:1.5em;
-  height: 1.5em;
-  margin-right:6px;
-  margin-left:2em;
-  margin-top:0.8em;
-  opacity: 0.5;
+.ViewsImage {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 6px;
+    margin-left: 2em;
+    margin-top: 0.8em;
+    opacity: 0.5;
 }
-.Views{
-  display: flex;
-  flex-direction: row;
-  color: black;
-  margin-bottom:1em;
-  }
-
-.ArticleWrapperSection{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+.Views {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin-bottom: 1em;
 }
-
-
+.ArticleWrapperSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* NAVIGATION BAR*/
+
 .NavigationBar {
-padding:0.5em 4em 2em 4em;
-max-width:1350px;
-margin:auto;
-display: flex;
-flex-direction: row;
+    padding: 0.5em 4em 2em 4em;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
 }
-
-.column{
-display: flex;
-flex-direction: row;
-flex-grow: 1;
-flex-shrink: 1;
-flex-basis: 0;
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
 }
-
-.NavigationButtonWrapper{
-   flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  margin-right: 1em;
+.NavigationButtonWrapper {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin-right: 1em;
 }
-
-.NavigationButton{
-  border: 2px solid rgb(192,192,192);
-  background: white;
-  padding: 0.7em 1em 0.7em 1em ;
-  margin: 14px 7px 14px 7px;
-  width: 100%;
-  }
-
-button.NavigationButton{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1em;
-  font-weight: 500;
-  color: rgb(192,192,192);
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
- }
-
-button.NavigationButton:hover {
-    background-color: rgb(41,50,85);
-    color: white;
-    border: 2px solid rgb(41,50,85);
+.NavigationButton {
+    border: 2px solid rgb(192, 192, 192);
+    background: white;
+    padding: 0.7em 1em 0.7em 1em;
+    margin: 14px 7px 14px 7px;
+    width: 100%;
 }
-
-
-/*MORE BUTTON*/
-.MoreWrapper{
-  margin-top: 1em;
-  margin-bottom: 3.5em;
-  color:rgb(41,50,85);
-   max-width:1350px;
-  margin:auto;
-    }
-
-.MoreButton{
-  border: 2px solid rgb(192,192,192);
-  background: white;
-  border-radius: 2rem;
-  padding: 0.55em 2.5em 0.55em 2.5em;
-  font-size: 1.2em;
-  margin: 3em;
-  }
-button.MoreButton{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  color: rgb(122,122,122);
-   -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  }
-
-  button.MoreButton:hover {
-    background-color: rgb(41,50,85);
-    color: white;
-    border: 2px solid rgb(41,50,85);
-}
-
-
-
-
-
-/*GET STARTED SECTION*/
-.GetStartedWrapper{
-  background: rgb(234,234,234);
-  border-bottom: 2px solid rgb(192,192,192);
-  border-top:2px solid rgb(192,192,192);
-
-}
-.GetStartedElements{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0 6em 0 6em;
-  color: rgb(41,50,85);
-  max-width:1350px;
-  margin:auto;
-  }
-
-.GetStartedImage{
-  width: 30%;
-  height: auto;
-  margin-top: 2em;
-}
-
-.GetStartedButton{
-  border: 2px solid rgb(41,50,85);
-  background:rgb(41,50,85);
-  border-radius: 2rem;
-  padding: 0.55em 2.5em 0.55em 2.5em;
-  font-size: 1.2em;
-  margin: 1em 1em 3.75em 0;
-}
-
-button.GetStartedButton{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  color: white;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-button.GetStartedButton:hover{
-   background-color: white;
-    color: rgb(122,122,122);
-    border: 2px solid rgb(192,192,192);
-}
-.GetStartedHeading{
-text-align: left;
-margin-left:2em;
-}
-
-.GetStartedHeading h1{
-  font-size: 3em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-.GetStartedHeading h2{
-  font-size: 1.5em;
-  font-weight: 500;
-  color: rgb(133,133,133);
-}
-
-
-
-
-
-/* GET IN TOUCH*/
-.GetInTouchSection{
-min-height: 250px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-max-width:1350px;
-margin:auto;
-}
-
-.GetInTouchWrapper{
-  padding: 0 4em 0 4em;
-  }
-
-.GetInTouch {
-  margin: 4em 0.25em 4em 0.25em;
-  flex: 1 1 0em;
-}
-
-.GetInTouch + .GetInTouch {
-  border-left: 2px solid rgb(192,192,192);
-  padding-left: 2em;
-}
-
-.GetInTouchElements{
-   color: rgb(41,50,85);
-   display: flex;
-   flex-direction: row;
-   height: 100%;
-  }
-
-.GetInTouchImage{
-  height: 10em;
-  width: auto;
-  margin-top: 2em;
- }
-
-.GetInTouchButton{
-  border: none;
-  background:white;
-  padding: 0;
-  font-size: 1.2em;
-  margin: 1em 1em 1em 0;
-  color: rgb(41,50,85);
-  }
-
-button.GetInTouchButtonn{
-  font-family: 'Quicksand', sans-serif;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-button.GetInTouchButton:hover{
- color: rgb(122,122,122);
-}
-
-.GetInTouchHeading{
-display: flex;
-flex-direction: column;
-align-content: stretch;
-align-items: flex-start;
-text-align: left;
-padding: 0 0 0 2em;
-height: 100%;
-}
-
-.GetInTouchHeading h1{
-  font-size: 2em;
-  font-weight: 600;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  flex-grow: 0;
-}
-
-.GetInTouchHeading h2{
-  font-size: 1em;
-  font-weight: 500;
-  color: rgb(133,133,133);
-  flex-grow: 1;
-}
-
-
-/*FOOTER*/
-.FooterWrapper{
-  background: rgb(41,50,85);
-  color: rgb(192,192,192);
-  padding: 0 4em 0 4em;
+button.NavigationButton {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(192, 192, 192);
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     
+    transition-duration: 0.4s;
 }
+button.NavigationButton:hover {
+    background-color: rgb(41, 50, 85);
+    color: white;
+    border: 2px solid rgb(41, 50, 85);
+}
+/*MORE BUTTON*/
 
+.MoreWrapper {
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+    color: rgb(41, 50, 85);
+    max-width: 1350px;
+    margin: auto;
+}
+.MoreButton {
+    border: 2px solid rgb(192, 192, 192);
+    background: white;
+    border-radius: 2rem;
+    padding: 0.55em 2.5em 0.55em 2.5em;
+    font-size: 1.2em;
+    margin: 3em;
+}
+button.MoreButton {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: rgb(122, 122, 122);
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    
+    transition-duration: 0.4s;
+}
+button.MoreButton:hover {
+    background-color: rgb(41, 50, 85);
+    color: white;
+    border: 2px solid rgb(41, 50, 85);
+}
+/*GET STARTED SECTION*/
+
+.GetStartedWrapper {
+    background: rgb(234, 234, 234);
+    border-bottom: 2px solid rgb(192, 192, 192);
+    border-top: 2px solid rgb(192, 192, 192);
+}
+.GetStartedElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 6em 0 6em;
+    color: rgb(41, 50, 85);
+    max-width: 1350px;
+    margin: auto;
+}
+.GetStartedImage {
+    width: 30%;
+    height: auto;
+    margin-top: 2em;
+}
+.GetStartedButton {
+    border: 2px solid rgb(41, 50, 85);
+    background: rgb(41, 50, 85);
+    border-radius: 2rem;
+    padding: 0.55em 2.5em 0.55em 2.5em;
+    font-size: 1.2em;
+    margin: 1em 1em 3.75em 0;
+}
+button.GetStartedButton {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    
+    transition-duration: 0.4s;
+}
+button.GetStartedButton:hover {
+    background-color: white;
+    color: rgb(122, 122, 122);
+    border: 2px solid rgb(192, 192, 192);
+}
+.GetStartedHeading {
+    text-align: left;
+    margin-left: 2em;
+}
+.GetStartedHeading h1 {
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+.GetStartedHeading h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(133, 133, 133);
+}
+/* GET IN TOUCH*/
+
+.GetInTouchSection {
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+}
+.GetInTouchWrapper {
+    padding: 0 4em 0 4em;
+}
+.GetInTouch {
+    margin: 4em 0.25em 4em 0.25em;
+    flex: 1 1 0em;
+}
+.GetInTouch + .GetInTouch {
+    border-left: 2px solid rgb(192, 192, 192);
+    padding-left: 2em;
+}
+.GetInTouchElements {
+    color: rgb(41, 50, 85);
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.GetInTouchImage {
+    height: 10em;
+    width: auto;
+    margin-top: 2em;
+}
+.GetInTouchButton {
+    border: none;
+    background: white;
+    padding: 0;
+    font-size: 1.2em;
+    margin: 1em 1em 1em 0;
+    color: rgb(41, 50, 85);
+}
+button.GetInTouchButtonn {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    
+    transition-duration: 0.4s;
+}
+button.GetInTouchButton:hover {
+    color: rgb(122, 122, 122);
+}
+.GetInTouchHeading {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 0 0 2em;
+    height: 100%;
+}
+.GetInTouchHeading h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    flex-grow: 0;
+}
+.GetInTouchHeading h2 {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(133, 133, 133);
+    flex-grow: 1;
+}
+/*FOOTER*/
+
+.FooterWrapper {
+    background: rgb(41, 50, 85);
+    color: rgb(192, 192, 192);
+    padding: 0 4em 0 4em;
+}
 .Footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width:1350px;
-  margin:auto;
-
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
 }
-.InteractWithCustomer{
-  display: flex;
-  flex-direction: row;
-  font-weight: 500;
-  font-size: 0.8em;
-}
-.InteractWithCustomer_column{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin:2em 0 4em 0;
-}
-.Contact{
- margin-left:8em;
-}
-.InteractWithCustomer_column :first-of-type {
-  margin-bottom: 1em;
-}
-
-.SocialMedia{
-  margin-top:2em;
-}
-.SocialMediaImage{
-  width: 2em;
-  height:auto;
-  padding:0.5em;
-  margin:0.5em;
-  border: 2px solid rgb(192,192,192);
-  border-radius: 4em;
-}
-.Signature{
-  font-size:0.8em;
-}
-
-
-/*******MEDIA*******/
-@media (max-width: 1000px) {
-
-.TeaserImage {
-  min-height:10em;
-  width:auto;
-  margin-top:2em;
-}
-
-.NavigationBar{
-  padding:0 4em 1em 4em;
-}
-  button.NavigationButton{
+.InteractWithCustomer {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
     font-size: 0.8em;
-  }
-  .NavigationButton{
-  padding: 0.5em 0.7em 0.5em 0.7em ;
-  margin: 10px 4px 10px 4px;
-  }
 }
+.InteractWithCustomer_column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2em 0 4em 0;
+}
+.Contact {
+    margin-left: 8em;
+}
+.InteractWithCustomer_column:first-of-type {
+    margin-bottom: 1em;
+}
+.SocialMedia {
+    margin-top: 2em;
+}
+.SocialMediaImage {
+    width: 2em;
+    height: auto;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 4em;
+}
+.Signature {
+    font-size: 0.8em;
+}
+/*******MEDIA*******/
 
+@media (max-width: 1000px) {
+    .TeaserImage {
+        min-height: 10em;
+        width: auto;
+        margin-top: 2em;
+    }
+    .NavigationBar {
+        padding: 0 4em 1em 4em;
+    }
+    button.NavigationButton {
+        font-size: 0.8em;
+    }
+    .NavigationButton {
+        padding: 0.5em 0.7em 0.5em 0.7em;
+        margin: 10px 4px 10px 4px;
+    }
+}
 @media (max-width: 829px) {
-.MainHeader h1{
-margin:0.5em 0 0.2em 0;
-font-size: 3em;
+    .MainHeader h1 {
+        margin: 0.5em 0 0.2em 0;
+        font-size: 3em;
+    }
+    .MainHeader h4 {
+        font-size: 1.4em;
+    }
+    .SmallHeader h1 {
+        font-size: 2em;
+    }
+    .SmallHeader h4 {
+        font-size: 1em;
+    }
+    .NavigationBar {
+        display: flex;
+        flex-direction: row;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .NavigationButton {
+        padding: 0.5em 0.7em 0.5em 0.7em;
+        margin: 7px 4px 7px 4px;
+    }
+    .TeaserImage {
+        min-height: 8em;
+        width: auto;
+    }
+    .Views {
+        margin-bottom: 0.5em;
+    }
+    .Views p {
+        font-size: 0.8em;
+    }
+    .TeaserHeading h1 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+    .GetStartedHeading h1 {
+        font-size: 2em;
+    }
+    .GetStartedHeading h2 {
+        font-size: 1em;
+    }
+    .GetStartedButton {
+        font-size: 1em;
+    }
+    .GetInTouchHeading h1 {
+        font-size: 1.5em;
+    }
+    .GetInTouchHeading h2 {
+        font-size: 0.8em;
+    }
+    .GetInTouchButton {
+        font-size: 1em;
+        margin: 1em 1em 1em 0;
+    }
+    .GetInTouchImage {
+        height: 7em;
+    }
 }
-
-.MainHeader h4{
-font-size: 1.4em;
-}
-.SmallHeader h1{
-  font-size: 2em;
-}
-
-.SmallHeader h4{
-  font-size: 1em;
-  }
-
-.NavigationBar{
-display: flex;
-flex-direction: row;
-  }
-
-.column{
-display: flex;
-flex-direction: column;
-}
-
-.NavigationButton{
-padding: 0.5em 0.7em 0.5em 0.7em;
-margin: 7px 4px 7px 4px;
-}
-
-.TeaserImage {
-  min-height:8em;
-  width:auto;
-  }
-.Views{
-  margin-bottom:0.5em;
-  }
-
-.Views p{
-  font-size: 0.8em;
-  }
-.TeaserHeading h1 {
-  font-size: 1em;
-  margin-bottom: 0.5em;
-}
-.GetStartedHeading h1{
-  font-size: 2em;
-}
-
-.GetStartedHeading h2{
-  font-size: 1em;
-  }
-.GetStartedButton{
-  font-size: 1em;
-}
-
-.GetInTouchHeading h1{
-  font-size: 1.5em;
-}
-
-.GetInTouchHeading h2{
-  font-size: 0.8em;
-}
-
-.GetInTouchButton{
-  font-size: 1em;
-  margin: 1em 1em 1em 0;
-  }
-
-.GetInTouchImage{
-  height: 7em;
-
- }
-
-}
-
-
 @media (max-width: 680px) {
-
-.MainHeader h1{
-margin:0.5em 0 0.2em 0;
-font-size: 3em;
-font-weight: 900;
+    .MainHeader h1 {
+        margin: 0.5em 0 0.2em 0;
+        font-size: 3em;
+        font-weight: 900;
+    }
+    .HeaderLogo {
+        min-height: 100%;
+    }
+    .SmallHeader h1 {
+        font-size: 2em;
+    }
+    .SmallHeader h4 {
+        font-size: 1em;
+    }
+    .TeaserHeading h1 {
+        font-size: 1em;
+    }
+    .TeaserImage {
+        max-height: 6em;
+        width: auto;
+    }
+    .ViewsImage {
+        width: 0.8em;
+        height: 0.8em;
+        margin-right: 6px;
+        margin-left: 2em;
+        margin-top: 0.9em;
+        opacity: 0.5;
+    }
+    .Views {
+        margin-bottom: 0.5em;
+    }
 }
-.HeaderLogo{
-min-height: 100%;
-}
-.SmallHeader h1{
-  font-size: 2em;
-}
-
-.SmallHeader h4{
-  font-size: 1em;
-  }
-.TeaserHeading h1 {
-  font-size: 1em;
-}
-
-.TeaserImage {
-  max-height:6em;
-  width:auto;
- }
-.ViewsImage{
-  width:0.8em;
-  height: 0.8em;
-  margin-right:6px;
-  margin-left:2em;
-  margin-top:0.9em;
-  opacity: 0.5;
-}
-.Views{
-  margin-bottom:0.5em;
-  }
-}
-
-
 @media (max-width: 570px) {
-
-.MainHeader{
-padding-right: 2em;
-padding-left: 2em;
+    .MainHeader {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .HeaderLogoWrapper {
+        margin: 0;
+        width: 100%;
+    }
+    .HeaderLogo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+    }
+    .MainHeader h1 {
+        margin: 0.25em 0 0.2em 0;
+    }
+    .SmallHeader {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .ArticleWrapper {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .ArticleWrapperSection {
+        flex-wrap: wrap;
+    }
+    .ArticleTeaser {
+        min-width: 100%;
+        margin: 0.25em 0 0.25em 0;
+    }
+    .TeaserImage {
+        min-height: 6em;
+        width: auto;
+    }
+    .NavigationBar {
+        flex-wrap: wrap;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .NavigationButtonWrapper {
+        margin: 0;
+    }
+    .NavigationButton {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .column {
+        min-width: 100%;
+    }
+    .MoreButton {
+        margin: 1em 3em 1em 3em;
+    }
+    .GetStartedElements {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .GetStartedButton {
+        font-size: 0.9em;
+        padding: 0.3em 2em 0.3em 2em;
+    }
+    .GetStartedHeading h1 {
+        font-size: 1.3em;
+    }
+    .GetStartedHeading h2 {
+        font-size: 0.8em;
+    }
+    .GetStartedImage {
+        min-width: 30%;
+        height: auto;
+    }
+    .GetInTouchWrapper {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .GetInTouchSection {
+        flex-direction: column;
+    }
+    .GetInTouchElements {
+        margin-bottom: 0.5em;
+    }
+    .GetInTouch {
+        min-width: 100%;
+        margin: 0;
+    }
+    .GetInTouchHeading {
+        padding-left: 2em;
+    }
+    .GetInTouchHeading h1 {
+        font-size: 1.3em;
+        margin-top: 0.5em;
+    }
+    .GetInTouch + .GetInTouch {
+        padding: 0;
+        border: none;
+    }
+    .GetInTouchImage {
+        min-width: 30%;
+        height: auto;
+    }
+    .GetInTouchButton {
+        margin: 1em 0 1em 0;
+        text-align: left;
+    }
+    .FooterWrapper {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .SocialMediaImage {
+        width: 1em;
+        height: auto;
+        border-radius: 2em;
+        display: block;
+    }
+    .SocialMedia {
+        margin-top: 1em;
+    }
 }
-.HeaderLogoWrapper{
-  margin: 0;
-width: 100%;
-}
-  .HeaderLogo{
-position: absolute;
-right: 0;
-bottom: 0;
-opacity: 0.2;
-}
-.MainHeader h1{
-  margin:0.25em 0 0.2em 0;
-}
-
-
-.SmallHeader{
-    padding-right: 2em;
-  padding-left: 2em;
-}
-
-
-.ArticleWrapper{
-  padding-right: 2em;
-  padding-left: 2em;
-}
-.ArticleWrapperSection{
-  flex-wrap: wrap;
-}
-.ArticleTeaser{
-   min-width: 100%;
-  margin:0.25em 0 0.25em 0; 
-}
-.TeaserImage {
-  min-height:6em;
-  width:auto;
- }
-
-
-
-.NavigationBar{
-  flex-wrap: wrap;
-  padding-right: 2em;
-  padding-left: 2em;
-  }
-  .NavigationButtonWrapper{
-    margin: 0;
-  }
-  .NavigationButton{
-    margin-top:0;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .column{
-    min-width: 100%;
-  }
-
-
-.MoreButton{
-  margin:1em 3em 1em 3em;
-}
-
-
-.GetStartedElements{
-  padding-right: 2em;
-  padding-left: 2em;
-}
-.GetStartedButton{
-  font-size: 0.9em;
-  padding: 0.3em 2em 0.3em 2em;
-}
-.GetStartedHeading h1{
-  font-size: 1.3em;
-}
-.GetStartedHeading h2{
-  font-size: 0.8em;
-}
-.GetStartedImage{
-  min-width: 30%;
-  height: auto;
-}
-
-
-
-.GetInTouchWrapper{
-  padding-left: 2em;
-  padding-right: 2em;
-}
-.GetInTouchSection{
-  flex-direction: column;
-}
-.GetInTouchElements{
-  margin-bottom: 0.5em;
-}
-.GetInTouch{
-min-width: 100%;
-margin: 0;
-}
-.GetInTouchHeading{
-  padding-left: 2em;
-}
-.GetInTouchHeading h1{
-  font-size: 1.3em;
-  margin-top:0.5em;
-}
-.GetInTouch + .GetInTouch{
-  padding: 0;
-  border: none;
-}
-.GetInTouchImage{
-  min-width: 30%;
-  height: auto;
-}
-.GetInTouchButton{
-  margin: 1em 0 1em 0;
-  text-align: left;
-}
-
-
-.FooterWrapper{
-  padding-right: 2em;
-  padding-left: 2em;
-}
-.SocialMediaImage{
-  width: 1em;
-  height:auto;
-  border-radius: 2em;
-  display: block;
-}
-.SocialMedia{
-  margin-top: 1em;
-}
-
-}
-
