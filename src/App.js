@@ -53,12 +53,30 @@ class NavigationBar extends Component {
   render() {
     return (
       <div className="NavigationBar">
-        <button className="NavigationButton">All</button>
-        <button className="NavigationButton">Mutual Fund</button>
-        <button className="NavigationButton">Equities</button>
-        <button className="NavigationButton">Real Estate</button>
-        <button className="NavigationButton">Stocks</button>
-        <button className="NavigationButton">Insurance</button>
+       <div className="column"> 
+        <div className="NavigationButtonWrapper">
+          <button className="NavigationButton">All</button>
+          </div>
+        <div className="NavigationButtonWrapper">
+          <button className="NavigationButton">Mutual Fund</button>
+          </div>
+       </div>
+       <div className="column">
+        <div className="NavigationButtonWrapper">
+          <button className="NavigationButton">Equities</button>
+          </div>
+        <div className="NavigationButtonWrapper">
+          <button className="NavigationButton">Real Estate</button>
+          </div>
+         </div>
+       <div className="column">
+        <div className="NavigationButtonWrapper">
+          <button className="NavigationButton">Stocks</button>
+          </div>
+        <div className="NavigationButtonWrapper">
+          <button className="NavigationButton">Insurance</button>
+          </div>
+       </div> 
       </div>
     );
   }

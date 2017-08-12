@@ -53,11 +53,13 @@ font-weight: 400;
 }
 .HeaderLogoWrapper{
 text-align: right;
+margin-left: 2em;
+width: 100%;
 
 }
 .HeaderLogo{
 max-width: 100%;
-height: 280px;
+min-height: 100%;
 }
 
 button.MainHeaderButton{
@@ -102,20 +104,20 @@ padding:0 4em 0 4em;
 
 .ArticleTeaser {
   margin: 0.5em 0.5em 0.5em 0.5em; 
-  /* pozniej zmienic height */
   color: white;
 
 }
 .ArticleTeaserElements{
   display: flex;
   flex-direction: column;
- justify-content: space-between;
+ align-content: stretch;
  min-height: 100%;  
 }
 .TeaserHeading{
   margin-left: 2em;
   margin-right: auto;
   text-align: left;
+  flex-grow:1;
 }
 .TeaserHeading h1 {
   padding-right: 2em;
@@ -124,7 +126,7 @@ padding:0 4em 0 4em;
 .TeaserImage {
   min-height:12em;
   width:auto;
-  margin-top:1em;
+  margin-top:2.5em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -153,16 +155,25 @@ justify-content: space-between;
 /* NAVIGATION BAR*/
 .NavigationBar {
 padding:0.5em 4em 2em 4em;
+max-width:1350px;
+margin:auto;
 display: flex;
 flex-direction: row;
- max-width:1350px;
-  margin:auto;
 }
 
-@media (max-width: 400px) {
-  .NavigationBar{
-    flex-direction: column;
-  }
+.column{
+display: flex;
+flex-direction: row;
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 0;
+}
+
+.NavigationButtonWrapper{
+   flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin-right: 1em;
 }
 
 .NavigationButton{
@@ -170,11 +181,9 @@ flex-direction: row;
   background: white;
   padding: 0.7em 1em 0.7em 1em ;
   margin: 14px 7px 14px 7px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  
-}
+  width: 100%;
+  }
+
 button.NavigationButton{
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
@@ -182,16 +191,13 @@ button.NavigationButton{
   color: rgb(192,192,192);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  
-}
+ }
+
 button.NavigationButton:hover {
     background-color: rgb(41,50,85);
     color: white;
     border: 2px solid rgb(41,50,85);
 }
-
-
-
 
 
 /*MORE BUTTON*/
@@ -276,6 +282,7 @@ button.GetStartedButton:hover{
 }
 .GetStartedHeading{
 text-align: left;
+margin-left:2em;
 }
 
 .GetStartedHeading h1{
@@ -322,8 +329,8 @@ margin:auto;
    color: rgb(41,50,85);
    display: flex;
    flex-direction: row;
+   height: 100%;
   }
-
 
 .GetInTouchImage{
   height: 10em;
@@ -351,8 +358,13 @@ button.GetInTouchButton:hover{
 }
 
 .GetInTouchHeading{
+display: flex;
+flex-direction: column;
+align-content: stretch;
+align-items: flex-start;
 text-align: left;
 padding: 0 0 0 1em;
+height: 100%;
 }
 
 .GetInTouchHeading h1{
@@ -360,12 +372,14 @@ padding: 0 0 0 1em;
   font-weight: 600;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+  flex-grow: 0;
 }
 
 .GetInTouchHeading h2{
   font-size: 1em;
   font-weight: 500;
   color: rgb(133,133,133);
+  flex-grow: 1;
 }
 
 
@@ -382,7 +396,7 @@ padding: 0 0 0 1em;
   flex-direction: row;
   justify-content: space-between;
   max-width:1350px;
-margin:auto;
+  margin:auto;
 
 
 }
@@ -419,3 +433,171 @@ margin:auto;
 .Signature{
   font-size:0.8em;
 }
+
+
+/*******MEDIA*******/
+@media (max-width: 1000px) {
+.App {
+  font-size: 14px;
+  }
+.TeaserImage {
+  min-height:10em;
+  width:auto;
+  margin-top:2em;
+}
+
+.NavigationBar{
+  padding:0 4em 1em 4em;
+}
+  button.NavigationButton{
+    font-size: 1em;
+  }
+  .NavigationButton{
+  padding: 0.5em 0.7em 0.5em 0.7em ;
+  margin: 10px 4px 10px 4px;
+  }
+}
+
+@media (max-width: 829px) {
+.MainHeader h1{
+margin:0.5em 0 0.2em 0;
+font-size: 3em;
+}
+
+.MainHeader h4{
+font-size: 1.4em;
+}
+.SmallHeader h1{
+  font-size: 2em;
+}
+
+.SmallHeader h4{
+  font-size: 1em;
+  }
+
+.NavigationBar{
+display: flex;
+flex-direction: row;
+  }
+
+.column{
+display: flex;
+flex-direction: column;
+}
+
+.NavigationButton{
+padding: 0.5em 0.7em 0.5em 0.7em;
+margin: 7px 4px 7px 4px;
+}
+
+.TeaserImage {
+  min-height:8em;
+  width:auto;
+  }
+.Views{
+  margin-bottom:0.5em;
+  }
+
+.Views p{
+  font-size: 0.8em;
+  }
+.TeaserHeading h1 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.GetStartedHeading h1{
+  font-size: 2em;
+}
+
+.GetStartedHeading h2{
+  font-size: 1em;
+  }
+.GetStartedButton{
+  font-size: 1em;
+}
+
+.GetInTouchHeading h1{
+  font-size: 1.5em;
+}
+
+.GetInTouchHeading h2{
+  font-size: 0.8em;
+}
+
+.GetInTouchButton{
+  font-size: 1em;
+  margin: 1em 1em 1em 0;
+  }
+
+.GetInTouchImage{
+  height: 7em;
+
+ }
+
+}
+
+
+@media (max-width: 680px) {
+.App {
+  font-size: 12px;
+  }
+.MainHeader h1{
+margin:0.5em 0 0.2em 0;
+font-size: 3em;
+font-weight: 900;
+}
+.HeaderLogo{
+max-width: 90%;
+min-height: 100%;
+}
+.SmallHeader h1{
+  font-size: 2em;
+}
+
+.SmallHeader h4{
+  font-size: 1em;
+  }
+.TeaserHeading h1 {
+  font-size: 1em;
+}
+
+.TeaserImage {
+  max-height:6em;
+  width:auto;
+ }
+.ViewsImage{
+  width:0.8em;
+  height: 0.8em;
+  margin-right:6px;
+  margin-left:2em;
+  margin-top:0.9em;
+  opacity: 0.5;
+}
+.Views{
+  margin-bottom:0.5em;
+  }
+}
+
+
+@media (max-width: 570px) {
+.TeaserImage {
+  min-height:6em;
+  width:auto;
+ }
+.HeaderLogo{
+max-width: 100%;
+min-height: 100%;
+}
+.SocialMediaImage{
+  width: 1.5em;
+  height:auto;
+  border-radius: 3em;
+}
+
+}
+
+
+
+@media (max-width: 480px) {
+}
+
